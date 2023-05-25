@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Http\RedirectResponse;
+// use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
@@ -13,7 +13,7 @@ class AdminController extends Controller
 
     } // End Method
 
-    public function AdminLogout(Request $request): RedirectResponse
+    public function AdminLogout(Request $request)//: RedirectResponse
     {
         Auth::guard('web')->logout();
 
@@ -21,6 +21,10 @@ class AdminController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/admin/login');
     } // End Method
+
+    public function AdminLogin(){
+        return view('admin.admin_login');
+    }// End Method
 }
