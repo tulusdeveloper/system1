@@ -19,6 +19,13 @@
             background-image: url("{{ asset('upload/login.png') }}");
         }
     </style>
+    <!-- @if (isset($reload) && $reload)
+      <script>
+          window.onload = function() {
+              location.reload();
+          };
+      </script>
+    @endif -->
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
