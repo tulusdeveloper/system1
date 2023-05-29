@@ -19,6 +19,9 @@
     <!-- core:css -->
     <link rel="stylesheet" href="{{asset('backend/assets/vendors/core/core.css')}}">
     <!-- endinject -->
+    	<!-- Plugin css for this page -->
+  <link rel="stylesheet" href="{{asset('backend/assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css')}}">
+	<!-- End plugin css for this page -->
 
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{asset('backend/assets/vendors/flatpickr/flatpickr.min.css')}}">
@@ -103,6 +106,13 @@
         }
     @endif
 </script>
+
+	<!-- START DATATABLES -->
+  <script src="{{asset('backend/assets/vendors/datatables.net/jquery.dataTables.js')}}"></script>
+  <script src="{{asset('backend/ssets/vendors/datatables.net-bs5/dataTables.bootstrap5.js')}}"></script>
+
+    <script src="{{asset('backend/assets/js/data-table.js')}}"></script>
+	<!-- END DATATABLES -->
 
 
 </body>
