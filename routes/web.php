@@ -65,6 +65,8 @@ Route::middleware(['auth','role:admin'])->group(function(){
 Route::controller(PropertyTypeController::class)->group(function(){
 
     Route::get('/all/type', 'AllType')->name('all.type');
+    Route::get('/add/type', 'AddType')->name('add.type');
+    Route::get('/add/property', 'AddProperty')->name('add.property');
 
 });
 

@@ -15,4 +15,13 @@ class PropertyTypeController extends Controller
         return view('backend.type.all_type',compact('types'));
 
     } //End Method
+
+    public function AddType(){
+        return view('backend.type.add_type');
+
+    } //End Method
+
+    public function AddProperty(){
+        return view('backend.type.add_property');
+    }
 }

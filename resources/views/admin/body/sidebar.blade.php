@@ -31,7 +31,7 @@
                 <a href="{{route('all.type')}}" class="nav-link">All Types</a>
               </li>
               <li class="nav-item">
-                <a href="pages/email/read.html" class="nav-link">Add Type</a>
+                <a href="{{ route('add.type') }}" class="nav-link">Add Type</a>
               </li>
               
             </ul>
