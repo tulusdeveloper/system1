@@ -4,6 +4,7 @@ use App\Http\Controllcers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AgentController;
+use App\Http\Controllers\Backend\PropertyTypeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +54,19 @@ Route::middleware(['auth','role:agent'])->group(function(){
 
 }); // End Group Agent Middleware
 
+//Unauthenticated admin Login
 Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
+
+
+
+//Property Type All Route
+Route::middleware(['auth','role:admin'])->group(function(){
+
+Route::controller(PropertyTypeController::class)->group(function(){
+
+    Route::get('/all/type', 'AllType')->name('all.type');
+
+});
+
+
+}); // End Property Type All Route

@@ -78,9 +78,10 @@
   <script src="{{asset('backend/assets/js/dashboard-dark.js')}}"></script>
     <!-- End custom js for this page -->
 
+        <!-- Custom js for Toaster -->
   <script type="text/javascript" src="{{asset('backend/assets/js/toaster.min.js')}}"></script>
-
-  <script>
+    <!-- End custom js for Toaster -->
+    <script>
     @if(Session::has('message'))
         var type = "{{ Session::get('alert-type', 'info') }}";
         switch(type) {
