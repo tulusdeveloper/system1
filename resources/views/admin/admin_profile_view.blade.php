@@ -1,6 +1,6 @@
 @extends('admin.admin_dashboard')
 @section('admin')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+<script src="{{ asset('backend/assets/js/custom/jquery.min.js') }}">
 </script>
 
 <div class="page-content">

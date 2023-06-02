@@ -12,6 +12,9 @@
                             </div>
                         </form>
                         <ul class="navbar-nav">
+                        <button id="mode-toggle">Select Mode</button>
+                        </ul>
+                        <ul class="navbar-nav">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="flag-icon flag-icon-ke mt-1" title="ke"></i> <span class="ms-1 me-1 d-none d-md-inline-block">English</span>
